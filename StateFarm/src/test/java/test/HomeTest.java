@@ -3,6 +3,7 @@ package test;
 import base.CommonAPI;
 import homepage.HomePage;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -24,7 +25,7 @@ public class HomeTest extends CommonAPI {
  //  @Test
     public void insuranceFunctionValidation() throws InterruptedException {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
+        homePage.clickOn(homePage.getInsurance());
         waitFor(2);
         homePage.getCarInsurance().click();
         waitFor(2);
@@ -51,7 +52,7 @@ public class HomeTest extends CommonAPI {
 
     }
 
-    //@Test
+    @Test
     public void investmentFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.getInvestment().click();
@@ -190,7 +191,7 @@ public class HomeTest extends CommonAPI {
 
     }
 
-   // @Test
+ //   @Test
     public void retirementFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.getBanking().click();
@@ -201,7 +202,7 @@ public class HomeTest extends CommonAPI {
         waitFor(1);
         homePage.getLowRiskCDCancel().click();
         waitFor(1);
-// gotta fix the scroll
+        ((JavascriptExecutor)driver).executeScript("scroll(0,5000)");
         homePage.getRetirementCDSpecial().click();
         waitFor(1);
 
@@ -279,6 +280,7 @@ public class HomeTest extends CommonAPI {
         navigateBack();
         homePage.getAccountTraditional().click();
         waitFor(1);
+
     }
  //   @Test
     public void verifySelectingAFund() throws InterruptedException{
@@ -293,11 +295,20 @@ public class HomeTest extends CommonAPI {
         waitFor(1);
 
     }
-    @Test
+ //   @Test
     public void verifyBlackRockFunds() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.getInvestmentButton().click();
         waitFor(1);
+        homePage.getBlackRockFund().click();
+        waitFor(1);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+        waitFor(1);
+        homePage.getTargetData().click();
+        waitFor(1);
+        homePage.getSpecialFund().click();
+        waitFor(1);
+
     }
 
 
