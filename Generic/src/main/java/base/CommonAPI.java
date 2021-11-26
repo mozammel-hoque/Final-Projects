@@ -130,7 +130,7 @@ public class CommonAPI {
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/chromedriver.exe");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.gecko.driver", "../Generic/drivers/geckodriver.exe");
             }

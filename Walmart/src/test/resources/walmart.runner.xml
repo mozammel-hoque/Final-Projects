@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="walmart Automation Scipt" parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <!--<parameter name="os_version" value="Sierra"/>-->
+    <parameter name="browserName" value="chrome"/>
+    <!--<parameter name="browserVersion" value="65.0"/>-->
+    <parameter name="url" value="https://www.Walmart.com"/>
+    <test name = "smoke testing Walmart search">
+        <classes>
+            <!--  <class name="Homepage.Home"></class> -->
+             <class name="Test.HomeTest"/>
+             <class name="Test.TestLogin"/>
+            <class name="Test.TestMenuPage"/>
+            <class name="Test.TestWalmartHelp"/>
+
+           <!--        <class name="test.TestCreditCards"/>-->
+            <!--        <class name="test.TestSpecialOffer"></class>-->
+        </classes>
+    </test>
+
+</suite>
