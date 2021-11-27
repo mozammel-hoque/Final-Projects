@@ -10,311 +10,296 @@ import org.testng.annotations.Test;
 
 public class HomeTest extends CommonAPI {
 
-     //   @Test
+        @Test
         public void titleValidation() throws InterruptedException {
             String title = driver.getTitle();
             Assert.assertEquals(title,"Auto, Life Insurance, Banking, & More. Get a Free Quote - State Farm®",title);
         }
 
- //  @Test
+   @Test
     public void checkedIfLogoIsDisplayed() throws InterruptedException {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         Assert.assertTrue(homePage.isLogoDisplaed());
     }
 
- //  @Test
+   @Test
     public void insuranceFunctionValidation() throws InterruptedException {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.clickOn(homePage.getInsurance());
-        waitFor(2);
-        homePage.getCarInsurance().click();
-        waitFor(2);
+        homePage.clickInsurance();
+        waitFor(1);
+        homePage.clickCarInsurance();
+        waitFor(1);
+       ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         homePage.getZipCode().sendKeys("11104");
-        waitFor(2);
-        homePage.getQuote().click();
-        waitFor(2);
-
-
-    }
-
- //   @Test
-    public void motorCycleFunction() throws InterruptedException{
-        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
         waitFor(1);
-        homePage.getMotorcycle().click();
-        waitFor(1);
-        homePage.getMotoZip().sendKeys("11104");
-        waitFor(1);
-        homePage.getFindAgent().click();
-        waitFor(1);
+ //       homePage.insuranceQuote();
+//        waitFor(1);
 
 
     }
 
     @Test
-    public void investmentFunctionality() throws InterruptedException{
+    public void motorCycleFunction() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestment().click();
+        homePage.clickInsurance();
         waitFor(1);
-        homePage.getRetirement().click();
-        waitFor(1);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        waitFor(1);
-        homePage.getPlanning().click();
+        homePage.motorcycle();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+        homePage.motoZip("11104");
         waitFor(1);
-        homePage.getRetirementTool().click();
+        homePage.motoAgent();
         waitFor(1);
-
     }
 
-  //  @Test
+
+
+    @Test
     public void boatFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
+        homePage.clickInsurance();
         waitFor(1);
-        homePage.getBoat().click();
+        homePage.boatInsurance();
         waitFor(1);
-        homePage.getMotoZip().sendKeys("11104");
+        homePage.boatZip("11105");
         waitFor(1);
-        homePage.getBoatAgent().click();
+        homePage.boatAgent();
         waitFor(1);
     }
 
-  //  @Test
+    @Test
     public void offRoadFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
+        homePage.clickInsurance();
         waitFor(1);
-        homePage.getOffRoad().click();
+        homePage.offRoad();
         waitFor(1);
-        homePage.getOffRoadZip().sendKeys("11104");
+        homePage.offRoadZip("11105");
         waitFor(1);
-        homePage.getOffRoadAgent().click();
+        homePage.offRoadAgent();
         waitFor(1);
 
     }
-   // @Test
+    @Test
     public void motorHomeFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
+        homePage.clickInsurance();
         waitFor(1);
-        homePage.getMotorHome().click();
+        homePage.motorHome();
         waitFor(1);
-        homePage.getMotorZip().sendKeys("11104");
+        homePage.motorZip("11104");
         waitFor(1);
-        homePage.getMotorAgent().click();
+        homePage.motorAgent();
 
     }
 
-  //  @Test
+    @Test
     public void roadsideFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInsurance().click();
+        homePage.clickInsurance();
         waitFor(1);
-        homePage.getRoadside().click();
+        homePage.roadsideAssistance();
         waitFor(1);
-        homePage.getAssistance().click();
+        homePage.assistance();
         waitFor(1);
-        homePage.getStartRequest().click();
+        homePage.startRequest();
         waitFor(1);
 
     }
-    //  @Test
+      @Test
     public void checkingFunctionalityValidation() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getChecking().click();
+        homePage.checking();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         waitFor(1);
-        homePage.getCompare().click();
+        homePage.compare();
         waitFor(1);
-        homePage.getPopup().click();
+        homePage.checkingPopup();
         waitFor(1);
     }
-  //  @Test
+    @Test
     public void savingsFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getSavings().click();
+        homePage.saving();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        homePage.getCompareSavings().click();
         waitFor(1);
-        homePage.getPopupSavings().click();
+        homePage.compareSaving();
+        waitFor(1);
+        homePage.popupSaving();
         waitFor(1);
     }
 
-  //  @Test
+    @Test
     public void homeLoanFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getHomeLoan().click();
+        homePage.homeLoan();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        homePage.getHomeZip().sendKeys("11104");
-        waitFor(1);
-        homePage.getHomeAgent().click();
+        homePage.homeZip("11104");
+//        waitFor(1);
+//        homePage.homeAgent();
 
     }
-
- //   @Test
+    @Test
     public void creditCardFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getCreditCard().click();
+        homePage.creditCard();
         waitFor(1);
-        homePage.getCreditCardLearnMore().click();
+        homePage.creditCardLearMore();
         waitFor(1);
-        homePage.getCreditCardPopupCancel().click();
+        homePage.creditCardPopupCancel();
         waitFor(1);
-        homePage.getCreditCardLearnMore().click();
+        homePage.creditCardLearMore();
         waitFor(1);
+        homePage.creditCardPopupContinue();
+        waitFor(1);
+
     }
-   // @Test
+    @Test
     public void CDsFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getCDs().click();
+        homePage.CDs();
         waitFor(1);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        homePage.getStandardCD().click();
+        ((JavascriptExecutor)driver).executeScript("scroll(0,2000)");
+        waitFor(1);
+        homePage.standardCd();
         waitFor(1);
 
     }
 
- //   @Test
+   @Test
     public void retirementFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getBanking().click();
+        homePage.banking();
         waitFor(1);
-        homePage.getRetirementcds().click();
+        homePage.retirementCD();
         waitFor(1);
-        homePage.getLowRiskCD().click();
+        homePage.lowRiskCD();
         waitFor(1);
-        homePage.getLowRiskCDCancel().click();
+        homePage.lowRiskCDCancel();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,5000)");
-        homePage.getRetirementCDSpecial().click();
+        waitFor(1);
+        homePage.retirementCDSpecial();
         waitFor(1);
 
     }
- //   @Test
-   public void retirementPlanningFunctionality() throws InterruptedException{
+    @Test
+    public void investmentFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getRetirementPlanning().click();
+        homePage.retirementPlanning();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         waitFor(1);
-        homePage.getStartPlanning().click();
+        homePage.startPlanning();
         waitFor(1);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,900)");
+        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         waitFor(1);
-        homePage.getEmergencyPlanning().click();
+        homePage.retirementTool();
         waitFor(1);
+
     }
-  //  @Test
+    @Test
     public void traditionalIRAFunctionality() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getTraditionalIRA().click();
+        homePage.traditionalIRA();
         waitFor(1);
-        homePage.getCompareTraditional().click();
+        homePage.compareTraditional();
         waitFor(1);
         navigateBack();
         waitFor(1);
-        homePage.getTraditionalCalculator().click();
+        homePage.traditionalCalculator();
         waitFor(1);
     }
 
- //   @Test
+   @Test
     public void verifyRothIRA() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getRothIRA().click();
+        homePage.rothIRA();
         waitFor(1);
-        homePage.getCompareRoth().click();
+        homePage.compareRoth();
         waitFor(1);
         navigateBack();
-        homePage.getRothCalculator().click();
+        homePage.rothCalculator();
         waitFor(1);
 
     }
-  //  @Test
+    @Test
     public void verifyBusinessRetirement() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getBusinessRetirement().click();
+        homePage.businessRetirement();
         waitFor(1);
         ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
         waitFor(1);
-        homePage.getIndividual401k().click();
+        homePage.individual401k();
         waitFor(1);
         navigateBack();
-        homePage.getSepIRA().click();
+        homePage.sepIRA();
         waitFor(1);
     }
 
- //   @Test
+   @Test
     public void verifyTypesOfAccount() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getTypesOfAccount().click();
+        homePage.typesOfAccount();
         waitFor(1);
-        homePage.getRothAccount().click();
+        homePage.rothAccount();
         waitFor(1);
         navigateBack();
-        homePage.getAccountTraditional().click();
+        homePage.traditionalAccount();
         waitFor(1);
 
     }
- //   @Test
+      @Test
     public void verifySelectingAFund() throws InterruptedException{
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getSelectingAFund().click();
+        homePage.selectingAFund();
         waitFor(1);
-        homePage.getStateFarmAgent().click();
+        homePage.stateFarmAgent();
         waitFor(1);
-        homePage.getAgentSearch().click();
+        homePage.agentSearch();
         waitFor(1);
 
     }
- //   @Test
-    public void verifyBlackRockFunds() throws InterruptedException{
+    @Test
+    public void verifyBlackRockFunds() throws InterruptedException {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.getInvestmentButton().click();
+        homePage.investment();
         waitFor(1);
-        homePage.getBlackRockFund().click();
+        homePage.blackRockFund();
         waitFor(1);
-        ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+        ((JavascriptExecutor) driver).executeScript("scroll(0,500)");
         waitFor(1);
-        homePage.getTargetData().click();
+        homePage.targetData();
         waitFor(1);
-        homePage.getSpecialFund().click();
+        homePage.specialFund();
         waitFor(1);
-
     }
-
-
-
-
-        }
+}
 
 
 
