@@ -128,6 +128,7 @@ public class HomeTest extends CommonAPI {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.ClickOnNewReleasesButton();
         homePage.ClickOnMoversAndShakersTab();
+        waitFor(2);
     }
     @Test
     public void test18() {
@@ -148,6 +149,7 @@ public class HomeTest extends CommonAPI {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.ClickOnPharmacyButton();
         homePage.ClickOnShopAllTab();
+        waitFor(2);
     }
     @Test
     public void test21() {
