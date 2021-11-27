@@ -15,9 +15,15 @@
     <module>Walmart</module>
     <module>HBO</module>
     <module>StateFarm</module>
-
   </modules>
-
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <name>Final-Project</name>
   <!-- FIXME change it to the project's website -->

@@ -13,8 +13,11 @@
         <classes>
             <!--<class name="test.HomeTest"/>-->
             <class name="homepage.HomePage"/>
+            <class name="homepage.Investment"></class>
 
             <class name="test.HomeTest"/>
+            <class name="test.TestInvestment"></class>
+            
         </classes>
     </test>
 
