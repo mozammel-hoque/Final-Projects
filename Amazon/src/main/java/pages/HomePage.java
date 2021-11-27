@@ -85,7 +85,7 @@ public class HomePage extends CommonAPI {
     WebElement scrollToAccessibilitySection;
     @FindBy (xpath = "//a[@href='https://www.amazon.jobs']")
     WebElement clickOnCareersOptionInAccessibilitySection;
-    @FindBy (xpath = "//img[@src='https://m.media-amazon.com/images/I/91tVDADj+dL._AC_UL320_.jpg']")
+    @FindBy (xpath = "//span[text()='The Flash, Vol. 1: Move Forward (The New 52)']")
     WebElement clickOnTheFirstFlashComic;
     @FindBy (xpath = "//*[@class='icp-nav-flag icp-nav-flag-us']")
     WebElement hoverOverUSFlag;

@@ -2,9 +2,11 @@ package test;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.AllMenuTest;
 import pages.HomePage;
 
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ public class HomeTest extends CommonAPI {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.searchItem("The Flash Comic");
         homePage.ClickOnTheFirstFlashComic();
+        homePage.ClickOnAddToCardButton();
     }
     @Test
     public void test5() {
@@ -88,7 +91,7 @@ public class HomeTest extends CommonAPI {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.ClickOnSignInButton();
         homePage.EnterUserEmail("mohammedullah27@yahoo.com");
-        homePage.EnterUserPassword("Jackbox223");
+        homePage.EnterUserPassword("Maxbox223");
     }
     @Test
     public void test12() {
@@ -348,5 +351,457 @@ public class HomeTest extends CommonAPI {
         homePage.ClickOnAmazonIgnite();
         homePage.ClickOnHelpButton();
         waitFor(2);
+    }
+    @Test
+    public void test51() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnAppliances();
+        allMenuTest.ClickOnAppliancesWarranties();
+        allMenuTest.ClickOnCookTops();
+    }
+    @Test
+    public void test52() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnAppsAndGames();
+        allMenuTest.ClickOnBooksAndComics();
+        allMenuTest.ClickOnBookInfoAndReviews();
+    }
+    @Test
+    public void test53() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnCameraAndPhotoProducts();
+        allMenuTest.ClickOnCamcorders();
+        allMenuTest.ClickOnVideo();
+    }
+    @Test
+    public void test54() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnElectronics();
+        allMenuTest.ClickOnHeadphones();
+        allMenuTest.ClickOnEarbudHeadphones();
+    }
+    @Test
+    public void test55() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnMoviesAndTV();
+        allMenuTest.ClickOnAmazonVideo();
+        allMenuTest.ClickOnAnime();
+    }
+    @Test
+    public void test56() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnVideoGames();
+        allMenuTest.ClickOnPlaystation5();
+        allMenuTest.ClickOnGames();
+    }
+    @Test
+    public void test57() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnEntertainmentCollectables();
+        allMenuTest.ClickOnComicBooks();
+        allMenuTest.ClickOnAnimation();
+    }
+    @Test
+    public void test58() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnDigitalMusic();
+        allMenuTest.ClickOnAlbums();
+        allMenuTest.ClickOnRock();
+    }
+    @Test
+    public void test59() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnHandmadeProducts();
+        allMenuTest.ClickOnJewelry();
+        allMenuTest.ClickOnWatches();
+    }
+    @Test
+    public void test60() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBestSellers();
+        allMenuTest.ClickOnSportsAndOutdoors();
+        allMenuTest.ClickOnExerciseAndFitness();
+        allMenuTest.ClickOnClothing();
+    }
+    @Test
+    public void test61() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnPrimeVideo();
+        allMenuTest.ClickOnIncludedWithPrime();
+        allMenuTest.HoverOverCategories(driver);
+        allMenuTest.ClickOnAnimeGenre();
+    }
+    @Test
+    public void test62() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnPrimeVideo();
+        allMenuTest.ClickOnKids();
+        allMenuTest.ClickOnDeals();
+    }
+    @Test
+    public void test63() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonMusic();
+        allMenuTest.ClickOnAmazonMusicUnlimited();
+        allMenuTest.HoverOverBuyMusic(driver);
+        allMenuTest.ClickOnCDs();
+    }
+    @Test
+    public void test64() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonMusic();
+        allMenuTest.ClickOnPodcasts();
+        allMenuTest.ClickOnListenNowButton();
+        waitFor(2);
+    }
+    @Test
+    public void test65() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnFireTV();
+        allMenuTest.ClickOnLearnAboutFireTV();
+        allMenuTest.HoverOverHelpTopics(driver);
+        allMenuTest.ClickOnSetup();
+    }
+    @Test
+    public void test66() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnFireTV();
+        allMenuTest.ClickOnFireTVSupport();
+        allMenuTest.ClickOnDigitalAndDeviceForum();
+        allMenuTest.ClickOnFireTVOption();
+        allMenuTest.ClickOnFireTV4K();
+    }
+    @Test
+    public void test67() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnKindleEReaderAndBooks();
+        allMenuTest.ClickOnAllKindleEReaders();
+        allMenuTest.ClickOnLast30DaysOption();
+        allMenuTest.ClickOnNewConditionOption();
+    }
+    @Test
+    public void test68() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnKindleEReaderAndBooks();
+        allMenuTest.ClickOnAllKindleEReaders();
+        allMenuTest.ClickOnHomeSecurityTab();
+        allMenuTest.ClickOnBlinkButton();
+    }
+    @Test
+    public void test69() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnKindleEReaderAndBooks();
+        allMenuTest.ClickOnAllKindleEReaders();
+        allMenuTest.ClickOnDay1Editions();
+    }
+    @Test
+    public void test70() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnKindleEReaderAndBooks();
+        allMenuTest.ClickOnAllKindleEReaders();
+        allMenuTest.ClickOnClimateCheckBox();
+        allMenuTest.ClickOn$100to$200Option();
+    }
+    @Test
+    public void test71() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAudibleBooks();
+        allMenuTest.ClickOnAudibleBooksOriginals();
+        allMenuTest.HoverOverTrending(driver);
+        allMenuTest.ClickOnMostWishedFor();
+    }
+    @Test
+    public void test72() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAudibleBooks();
+        allMenuTest.ClickOnAudibleBooksOriginals();
+        allMenuTest.ClickOnNewAndNoteworthy();
+        allMenuTest.ClickOnComputerAndTech();
+    }
+    @Test
+    public void test73() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAudibleBooks();
+        allMenuTest.ClickOnAudibleBooksOriginals();
+        allMenuTest.HoverOverCategoriesTab(driver);
+        allMenuTest.ClickOnBiosAndMemoirs();
+    }
+    @Test
+    public void test74() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAppStoreForAndroid();
+        allMenuTest.ClickOnGamesOption();
+        allMenuTest.ClickOnLast90Days();
+        allMenuTest.ClickOnArcadeOption();
+    }
+    @Test
+    public void test75() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAppStoreForAndroid();
+        allMenuTest.ClickOnGamesOption();
+        allMenuTest.HoverOverAmazonCoins(driver);
+        allMenuTest.ClickOnFAQsOption();
+    }
+    @Test
+    public void test76() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnClothingShoesJewelry();
+        allMenuTest.ClickOnMen();
+        allMenuTest.HoverOverLuggage(driver);
+        waitFor(2);
+        allMenuTest.ClickOnCarryOn();
+    }
+    @Test
+    public void test77() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnClothingShoesJewelry();
+        allMenuTest.ClickOnMen();
+        allMenuTest.ClickOnOurBrands();
+        waitFor(2);
+        allMenuTest.ClickOnClimatePledgeFriendly();
+    }
+    @Test
+    public void test78() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnClothingShoesJewelry();
+        allMenuTest.ClickOnWomen();
+        allMenuTest.ClickOnOurBrands();
+        allMenuTest.ClickOnAccessories();
+    }
+    @Test
+    public void test79() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnClothingShoesJewelry();
+        allMenuTest.ClickOnLuxuryStores();
+        allMenuTest.ClickOnDesigners();
+    }
+    @Test
+    public void test80() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonFresh();
+        allMenuTest.ClickOnAllAmazonFresh();
+        allMenuTest.HoverOverFood(driver);
+        allMenuTest.ClickOnProduce();
+    }
+    @Test
+    public void test81() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonFresh();
+        allMenuTest.ClickOnAllAmazonFresh();
+        allMenuTest.HoverOverBeverages(driver);
+        allMenuTest.ClickOnWater();
+    }
+    @Test
+    public void test82() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonFresh();
+        allMenuTest.ClickOnAllAmazonFresh();
+        allMenuTest.HoverOverHousehold(driver);
+        allMenuTest.ClickOnHomeAndKitchen();
+    }
+    @Test
+    public void test83() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonFresh();
+        allMenuTest.ClickOnAllAmazonFresh();
+        allMenuTest.HoverOverMoreFromFresh(driver);
+        allMenuTest.ClickOnSpecialtyDiets();
+    }
+    @Test
+    public void test84() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnChildrenBooks();
+        allMenuTest.ClickOnK12Teachers();
+        allMenuTest.ClickOnPrimeReadingEligible();
+    }
+    @Test
+    public void test85() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnTextbooks();
+        allMenuTest.ClickOnETextbooks();
+        allMenuTest.ClickOnKindleUnlimitedEligible();
+    }
+    @Test
+    public void test86() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnMagazines();
+        allMenuTest.ClickOnGiftIdeas();
+        allMenuTest.ClickOnUnder10$Option();
+    }
+    @Test
+    public void test87() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnComicsAndGraphicNovels();
+        allMenuTest.ClickOnManga();
+        allMenuTest.ClickOnBestSellingManga();
+    }
+    @Test
+    public void test88() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnComicsAndGraphicNovels();
+        allMenuTest.ClickOnGraphicNovels();
+        allMenuTest.ClickOnSuperheroesGenre();
+    }
+    @Test
+    public void test89() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnMoviesAndTVOption();
+        allMenuTest.ClickOnTVShowsDepartment();
+        allMenuTest.ClickOnComingSoon();
+    }
+    @Test
+    public void test90() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnMoviesAndTVOption();
+        allMenuTest.ClickOnAllGenreTab();
+        allMenuTest.ClickOnAnimeGenreButton();
+    }
+    @Test
+    public void test91() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnVideoGamesOption();
+        allMenuTest.ClickOnNintendoSwitch();
+        allMenuTest.ClickOnConsoleButton();
+    }
+    @Test
+    public void test92() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnVideoGamesOption();
+        allMenuTest.ClickOnPlaystationBrand();
+        allMenuTest.ClickOnUsedCondition();
+    }
+    @Test
+    public void test93() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnEntertainmentCollectablesOption();
+        allMenuTest.ClickOn2000sDecade();
+        allMenuTest.ClickOn2000To2020Year();
+    }
+    @Test
+    public void test94() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnPCGaming();
+        allMenuTest.ClickOnComputers();
+        allMenuTest.ClickOnMonitors();
+        allMenuTest.ClickOnGamingMonitors();
+    }
+    @Test
+    public void test95() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnMoviesMusicGames();
+        allMenuTest.ClickOnHeadphonesOption();
+        allMenuTest.HoverOverHeadphones(driver);
+        allMenuTest.ClickOnWireless();
+    }
+    @Test
+    public void test96() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnBooks();
+        allMenuTest.ClickOnBooksOption();
+        allMenuTest.ClickOnCelebrityPicks();
+        allMenuTest.ClickOnMostRecent();
+    }
+    @Test
+    public void test97() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnAmazonFresh();
+        allMenuTest.ClickOnAllAmazonFresh();
+        allMenuTest.HoverOverBaby(driver);
+        allMenuTest.ClickOnFeedingAndFormulas();
+    }
+    @Test
+    public void test98() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnClothingShoesJewelry();
+        allMenuTest.ClickOnSalesAndDeals();
+        allMenuTest.HoverOverKids(driver);
+        allMenuTest.ClickOnBoysActivewear();
+        allMenuTest.ClickOnPremiumBrands();
+    }
+    @Test
+    public void test99() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnPharmacy();
+        allMenuTest.ClickOnAmazonPharmacy();
+        allMenuTest.ClickOnPromise();
+        allMenuTest.ClickOnForPrescribers();
+    }
+    @Test
+    public void test100() {
+        AllMenuTest allMenuTest = PageFactory.initElements(driver, AllMenuTest.class);
+        allMenuTest.ClickOnAllMenuButton();
+        allMenuTest.ClickOnPharmacy();
+        allMenuTest.ClickOnAmazonPharmacy();
+        allMenuTest.ClickOnHowItWorks();
+        allMenuTest.ClickOnShop();
     }
 }
