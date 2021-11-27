@@ -802,4 +802,6 @@ public class HomeTest extends CommonAPI {
         allMenuTest.ClickOnHowItWorks();
         allMenuTest.ClickOnShop();
     }
+
+    //done class
 }
