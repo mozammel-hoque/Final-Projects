@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
+<suite name="Amazon Automation Scipt" parallel="false">
+
+<!--    <parameter name="useCloudEnv" value="false"/>-->
+<!--    <parameter name="cloudEnvName" value="browserstack"/>-->
+    <parameter name="os" value="Windows"/>
+    <!--<parameter name="os_version" value="Sierra"/>-->
+    <parameter name="browserName" value="chrome"/>
+<!--    <parameter name="browserVersion" value="65.0"/>-->
+    <parameter name="url" value="https://www.statefarm.com/"/>
+
+    <test name = "smoke test of StateFarm">
+        <classes>
+            <!--<class name="test.HomeTest"/>-->
+            <class name="homepage.HomePage"/>
+            <class name="homepage.Investment"></class>
+            <class name="homepage.GetAQuote"></class>
+            <class name="homepage.InsuranceBill"></class>
+
+            <class name="test.HomeTest"/>
+            <class name="test.TestInvestment"></class>
+            <class name="test.TestGetAQuote"></class>
+            <class name="test.TestInsuranceBill"></class>
+            <class name="test.TestClaim"></class>
+            
+        </classes>
+    </test>
+
+</suite>

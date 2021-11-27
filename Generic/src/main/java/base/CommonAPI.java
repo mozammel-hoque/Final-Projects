@@ -130,7 +130,7 @@ public class CommonAPI {
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/chromedriver.exe");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.gecko.driver", "../Generic/drivers/geckodriver.exe");
             }
@@ -228,6 +228,18 @@ public class CommonAPI {
     public void hoverOver(WebDriver driver, WebElement element){
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
+    }
+    public void dragDrop(WebDriver driver, WebElement source, WebElement target){
+        Actions action = new Actions(driver);
+        action.dragAndDrop(source, target).build().perform();
+    }
+    public void doubleClick(WebDriver driver, WebElement element){
+        Actions action = new Actions(driver);
+        action.doubleClick(element).build().perform();
+    }
+    public void rightClick(WebDriver driver, WebElement element){
+        Actions action = new Actions(driver);
+        action.contextClick(element).build().perform();
     }
     public void scrollToView(WebElement element, WebDriver driver){
         JavascriptExecutor js = ((JavascriptExecutor)driver);

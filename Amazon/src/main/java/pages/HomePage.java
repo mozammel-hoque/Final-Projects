@@ -494,25 +494,15 @@ public class HomePage extends CommonAPI {
         return clickOnHelpButton;
     }
 
-    public boolean isLogoDisplayed() {
-        return getTest2().isDisplayed();
-    }
+   public boolean isLogoDisplayed() { return getTest2().isDisplayed(); }
 
-    public void searchItem(String str) {
-        typeEnter(getSearchItem(), str);
-    }
+    public void searchItem(String str) { typeEnter(getSearchItem(), str); }
 
-    public void ClickOnItem() {
-        clickOn(getClickOnItem());
-    }
+    public void ClickOnItem() { clickOn(getClickOnItem()); }
 
-    public void SelectColorOfItem() {
-        clickOn(getSelectColorOfItem());
-    }
+    public void SelectColorOfItem() { clickOn(getSelectColorOfItem()); }
 
-    public void ClickOnAddToCardButton() {
-        clickOn(getClickAddToCartButton());
-    }
+    public void ClickOnAddToCardButton() { clickOn(getClickAddToCartButton()); }
 
     public void selectDropdownElement(String str){
         selectDropdownElement(getTest7(), str);
