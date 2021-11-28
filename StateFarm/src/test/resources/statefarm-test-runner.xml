@@ -12,15 +12,15 @@
     <test name = "smoke test of StateFarm">
         <classes>
             <!--<class name="test.HomeTest"/>-->
-            <class name="homepage.HomePage"/>
-            <class name="homepage.Investment"></class>
-            <class name="homepage.GetAQuote"></class>
-            <class name="homepage.InsuranceBill"></class>
+<!--            <class name="homepage.HomePage"/>-->
+<!--            <class name="homepage.Investment"></class>-->
+<!--            <class name="homepage.GetAQuote"></class>-->
+<!--            <class name="homepage.InsuranceBill"></class>-->
 
-            <class name="test.HomeTest"/>
-            <class name="test.TestInvestment"></class>
-            <class name="test.TestGetAQuote"></class>
-            <class name="test.TestInsuranceBill"></class>
+<!--            <class name="test.HomeTest"/>-->
+<!--            <class name="test.TestInvestment"></class>-->
+<!--            <class name="test.TestGetAQuote"></class>-->
+<!--            <class name="test.TestInsuranceBill"></class>-->
             <class name="test.TestClaim"></class>
             
         </classes>

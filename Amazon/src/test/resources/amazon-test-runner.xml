@@ -12,7 +12,7 @@
     <test name = "smloke Amazon search">
         <classes>
             <!--<class name="test.HomeTest"/>-->
-            <class name="test.HomeTest"/>
+<!--            <class name="test.HomeTest"/>-->
         </classes>
     </test>
 
